@@ -3,19 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pago</title>
 </head>
 <body>
     <header>
         <h1>
-            Elije Tu Propio Estilo 
+            Llena Tus datos 
         </h1>
         <nav>
-            <a href="RopaHombres.html"></a>
+            <a href="Contacto.html"></a>
         </nav>
     </header>
     <main>
-        
+        <form action="./contacto.html" method="post">
+            <div>
+                <label for="Nombre">Nombre:
+                    <input type="text" name="txtNombre" id="Nombre">
+                </label>
+            </div>
+            <div>
+                <label for="Apellido">Apellido:
+                    <input type="text" name="txtApellido" id="Apellido">
+                </label>
+            </div>
+            <div>
+                <label for="Freelance">Sexo:  
+                </label>
+                <label for="">Masculino</label>
+                <input type="checkbox" name="Masculino" value="M">
+                <label for="">Femenino</label>
+                <input type="checkbox" name="Femenino" value="F">
+            </div>
+            <div>
+                <label for="Tarjeta">Tarjeta:
+                    <select name="TipoTarjeta" id="TipoTarjeta">
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Naranja">Naranja</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="NumeroTarjeta">Numero Tarjeta:
+                    <input type="text" name="intNumero" id="NumeroTarjeta">
+                </label>
+            </div>
+            <label for="CodigoSeguridad">Codigo Seguridad:
+                <input type="text" name="CodigoSeguridad" id="CodigoSeguridad">
+            </label>
+            <div>
+                <label for="Comentarios">
+                    Comentarios
+                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
     </main>
     <footer>
         Autor: Gabriel Arietti
