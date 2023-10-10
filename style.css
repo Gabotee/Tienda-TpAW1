@@ -1,26 +1,39 @@
-
+                                /* CSS GENERAL */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-    padding: 25px;
-    background-color: bisque;
-    display: flex;
-    
+html,body{
+    width: 100%;
 }
 
-h1{
-    padding: 50px;
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+header{
+    padding: 10px;
+    background-color: bisque;
+    display: flex;
+}
+
+footer{
+    background-color: aliceblue;
+    text-align: left;
+    font-size: 15px;
     color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 60;
+    padding: 25px;
 }
 
 nav {
-    display: inline;
+    display: flex;
     width: 80px;
     height: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -29,17 +42,31 @@ nav {
     background-color: transparent;
     text-align: center;
     color: black;
-    
+    position: absolute;
+    right: 100px;
 }
 
-/* Main */
-h2{
+nav a{
+    display: inline;
+    padding: 10px;
+}
+
+/* INDEX */
+
+.Index_Titulo{
+    padding: 50px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60;
+}
+
+.Index_h2{
     padding: 30px;
     font-size: 25px;
     background-color: rgb(170, 166, 162);
 }
 
-p{
+.Index_P{
     display: flex;
     padding: 15px;
     font-size: 18px;
@@ -54,11 +81,48 @@ p{
 
 
 
+/* Hoja de Compras */
 
-footer{
-    background-color: aliceblue;
-    text-align: left;
-    font-size: 15px;
-    color: black;
-    padding: 25px;
+.Compras_container_item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.Compras_info-producto{
+    border-radius: 10%;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Compras_precio{
+    font-size: 18px;
+    font-weight: 900;
 }
