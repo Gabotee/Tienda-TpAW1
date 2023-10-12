@@ -17,56 +17,24 @@
         </nav>
     </header>
     <main>
-        <form action="./contacto.html" method="post">
-            <div>
-                <label for="Nombre">Nombre:
-                    <input type="text" name="txtNombre" id="Nombre">
-                </label>
-            </div>
-            <br>
-            <div>
-                <label for="Apellido">Apellido:
-                    <input type="text" name="txtApellido" id="Apellido">
-                </label>
-            </div>
-            <br>
-            <div>
-                <label for="Sexo">Sexo:  
-                </label>
-                <label for="">Masculino</label>
-                <input type="checkbox" name="Masculino" value="M">
-                <label for="">Femenino</label>
-                <input type="checkbox" name="Femenino" value="F">
-            </div>
-            <br>
-            <div>
-                <label for="Tarjeta">Tarjeta:
-                    <select name="TipoTarjeta" id="TipoTarjeta">
-                        <option value="Mastercard">Mastercard</option>
-                        <option value="Visa">Visa</option>
-                        <option value="Naranja">Naranja</option>
-                    </select>
-                </label>
-            </div>
-            <br>
-            <div>
-                <label for="NumeroTarjeta">Numero Tarjeta:
-                    <input type="text" name="intNumero" id="NumeroTarjeta">
-                </label>
-            </div>
-            <br>
-            <label for="CodigoSeguridad">Codigo Seguridad:
-                <input type="text" name="CodigoSeguridad" id="CodigoSeguridad">
-            </label>
-            <br>
-            <div>
-                <label for="Comentarios">
-                    Comentarios
-                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"></textarea>
-                </label>
-            </div>
-            <br>
-            <button type="submit">Pagar</button>
+        <form class="form" action="./contacto.html" method="post">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" placeholder="Nombre">
+            <label for="id-email">Email</label>
+            <input name="Email" id="id-email" type="email" placeholder="email@email.com" required />
+            <label for="Tarjeta">Tarjeta:</label>
+            <select name="TipoTarjeta" id="TipoTarjeta">
+                <option value="Mastercard">Mastercard</option>
+                <option value="Visa">Visa</option>
+                <option value="Naranja">Naranja</option>
+            </select>
+            <label for="NumeroTarjeta">Numero Tarjeta:</label>
+            <input type="text" name="intNumero" id="NumeroTarjeta" placeholder="xxxxxxxxxxxxxxxxxxxx">
+            <label for="CodigoSeguridad">Codigo Seguridad:</label>
+            <input type="text" name="CodigoSeguridad" id="CodigoSeguridad" placeholder="xxx">
+            <label for="id-consulta">Consulta</label>
+            <textarea name="Comentario" id="id-consulta" cols="30" rows="10" required></textarea>
+            <button type="submit">Enviar consulta</button>
         </form>
     </main>
     <footer>

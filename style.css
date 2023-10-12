@@ -19,13 +19,17 @@ main{
 }
 
 header{
-    padding: 10px;
+    padding: 20px;
     background-color: bisque;
     display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-block: 15px;
 }
 
 footer{
     background-color: aliceblue;
+    width: 100%;
     text-align: left;
     font-size: 15px;
     color: black;
@@ -34,21 +38,13 @@ footer{
 
 nav {
     display: flex;
-    width: 80px;
-    height: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: transparent;
-    text-align: center;
-    color: black;
-    position: absolute;
-    right: 100px;
+    gap: 15px;
 }
 
 nav a{
-    display: inline;
-    padding: 10px;
+    
+    color: #333333
+    
 }
 
 /* INDEX */
@@ -64,6 +60,7 @@ nav a{
     padding: 30px;
     font-size: 25px;
     background-color: rgb(170, 166, 162);
+    
 }
 
 .Index_P{
@@ -79,8 +76,6 @@ nav a{
     margin-left: 100px;
 }
 
-
-
 /* Hoja de Compras */
 
 .Compras_container_item{
@@ -88,33 +83,46 @@ nav a{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     text-align: center;
+    padding-left: 3%;
+    padding-top: 3%;
+    background-color: #9999;
+}
+
+.Compras_Item{
+    padding: 15px;
+    width: 17%;
+    box-shadow: 0 0 7px #9999;
+    margin: 20px 20px 0 10px;
+    border-style: solid;
 }
 
 .Compras_info-producto{
     border-radius: 10%;
+    
 }
 
-.item:hover{
+.Compras_item:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item img{
-    width: 100%;
+.Compras_item img{
+    width: 80%;
     height: 300px;
     object-fit: cover;
+    object-position: center;
     border-radius: 10px 10px 0 0;
-
+    transition: all 3s;
 }
 
-.item figure{
+.Compras_item figure{
     overflow: hidden;
 }
 
-.item:hover img{
+.Compras_item:hover img{
     transform: scale(1.2);
 }
 
-.info-producto{
+.Compras_info-producto{
     padding: 15px 30px;
     line-height: 2;
     display: flex;
@@ -122,7 +130,48 @@ nav a{
     gap: 10px;
 }
 
+.Compras_info-producto a{
+    border: none;
+    background: none;
+    background-color: black;
+    color: #ffffff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
 .Compras_precio{
     font-size: 18px;
     font-weight: 900;
+}
+
+/* Hoja de Contacto */
+
+.form{
+    display:flex;
+    flex-direction: column;
+    padding-inline: 20%;
+    margin-block-end: 40px;
+}
+.form label,.form input,.form textarea{
+    font-size: inherit;
+    font-family: inherit;
+    padding-block: 10px;
+    padding-inline: 5px;
+    margin-block-end: 10px;
+}
+.form input{
+    border: 1px solid #333;
+}
+.form textarea{
+    border: 1px solid #333;
+    min-height: 300px;
+}
+.form button{
+    font-size: inherit;
+    color: #ffffff;
+    background-color: #333333;
+    padding-block: 20px;
+    margin-block-start: 15px;
+    border-radius: 6px;
+    border:none;
 }
