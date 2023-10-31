@@ -1,48 +1,58 @@
+
 const Producto = {
-    nombre: "Deportivo",
-    Detalle: [
+    Categoria: "Deportivo",
+    Articulo: [
         {
             nombre: "Camiseta Argentina",
             Detalles: [
                 { 
-                    Precio: 65.000
+                    Precio: 65000
                 },
                 {
-                    Talle: XL
+                    Talle: "XL" 
                 },
                 {
-                    Genero: Masculino
+                    Genero: "Masculino"
                 },
+                {
+                    Imagen: "./media/CamisetaArgentina.jpg"
+                }
             ],
         },
 
         {
-            nombre: "Conjunto Deportivo",
+            nombre: "Conjunto Deportivo H",
             Detalles: [
                 { 
-                    Precio: 30.000
+                    Precio: 30000
                 },
                 {
-                    Talle: L
+                    Talle: "L"
                 },
                 {
-                    Genero: Masculino
+                    Genero: "Masculino"
                 },
+                {
+                    Imagen: "./media/ConjuntoDeportivoHombre.jpg"
+                }
             ],
         },
 
         {
-            nombre: "Conjunto Deportivo",
+            nombre: "Conjunto Deportivo M",
             Detalles: [
                 { 
-                    Precio: 25.000
+                    Precio: 25000
                 },
                 {
-                    Talle: XL
+                    Talle: "XL"
                 },
                 {
-                    Genero: Femenino
+                    Genero: "Femenino"
                 },
+                {
+                    Imagen: "./media/ConjuntoDeportivoMujer.jpg"
+                }
             ],
         },
 
@@ -50,14 +60,17 @@ const Producto = {
             nombre: "Zapatillas Nike",
             Detalles: [
                 { 
-                    Precio: 50.000
+                    Precio: 50000
                 },
                 {
                     Talle: 40
                 },
                 {
-                    Genero: Masculino
+                    Genero: "Masculino"
                 },
+                {
+                    Imagen: "./media/ZapatillasDeportiva.jpg"
+                }
             ],
         },
 
@@ -65,23 +78,28 @@ const Producto = {
             nombre: "Camiseta Argentina Suplente",
             Detalles: [
                 { 
-                    Precio: 45.000
+                    Precio: 45000
                 },
                 {
-                    Talle: XL
+                    Talle: "XL"
                 },
                 {
-                    Genero: Masculino
+                    Genero: "Masculino"
                 },
+                {
+                    Imagen: "./media/CamisetaSuplente.jpg"
+                }
             ],
         }
     ]
 };
 
-// Identificamos el contenedor
-const app = document.getElementById("app");
+export default Producto
 
-console.log(app)
+// Identificamos el contenedor
+//const app = document.getElementById("app");
+
+//console.log(app)
 
  
 /*
@@ -107,7 +125,7 @@ carrera.semestres.forEach(
 )
 */
 
-app.innerHTML = RenderHTML
+//app.innerHTML = RenderHTML
 
 // Creamos variable que contendrá el HTML renderizado
 // let renderizado = `<h2>${carrera.nombre}</h2>`;
