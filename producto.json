@@ -1,0 +1,93 @@
+{
+        "articulo": [
+            {
+                "nombre": "Camiseta Argentina",
+                "detalles": [
+                    { 
+                        "Precio": 65000
+                    },
+                    {
+                        "Talle": "XL" 
+                    },
+                    {
+                        "Genero": "Masculino"
+                    },
+                    {
+                        "Imagen": "./media/CamisetaArgentina.jpg"
+                    }
+                ]
+            },
+    
+            {
+                "nombre": "Conjunto Deportivo H",
+                "detalles": [
+                    { 
+                        "Precio": 30000
+                    },
+                    {
+                        "Talle": "L"
+                    },
+                    {
+                        "Genero": "Masculino"
+                    },
+                    {
+                        "Imagen": "./media/ConjuntoDeportivoHombre.jpg"
+                    }
+                ]
+            },
+    
+            {
+                "nombre": "Conjunto Deportivo M",
+                "detalles": [
+                    { 
+                        "Precio": 25000
+                    },
+                    {
+                        "Talle": "XL"
+                    },
+                    {
+                        "Genero": "Femenino"
+                    },
+                    {
+                        "Imagen": "./media/ConjuntoDeportivoMujer.jpg"
+                    }
+                ]
+            },
+    
+            {
+                "nombre": "Zapatillas Nike",
+                "detalles": [
+                    { 
+                        "Precio": 50000
+                    },
+                    {
+                        "Talle": 40
+                    },
+                    {
+                        "Genero": "Masculino"
+                    },
+                    {
+                        "Imagen": "./media/ZapatillasDeportiva.jpg"
+                    }
+                ]
+            },
+    
+            {
+                "nombre": "Camiseta Argentina Suplente",
+                "detalles": [
+                    { 
+                        "Precio": 45000
+                    },
+                    {
+                        "Talle": "XL"
+                    },
+                    {
+                        "Genero": "Masculino"
+                    },
+                    {
+                        "Imagen": "./media/CamisetaSuplente.jpg"
+                    }
+                ]
+            }
+        ]
+}

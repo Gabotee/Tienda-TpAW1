@@ -1,10 +1,10 @@
 
 const Producto = {
-    Categoria: "Deportivo",
-    Articulo: [
+    categoria: "Deportivo",
+    articulo: [
         {
             nombre: "Camiseta Argentina",
-            Detalles: [
+            detalles: [
                 { 
                     Precio: 65000
                 },
@@ -22,7 +22,7 @@ const Producto = {
 
         {
             nombre: "Conjunto Deportivo H",
-            Detalles: [
+            detalles: [
                 { 
                     Precio: 30000
                 },
@@ -40,7 +40,7 @@ const Producto = {
 
         {
             nombre: "Conjunto Deportivo M",
-            Detalles: [
+            detalles: [
                 { 
                     Precio: 25000
                 },
@@ -58,7 +58,7 @@ const Producto = {
 
         {
             nombre: "Zapatillas Nike",
-            Detalles: [
+            detalles: [
                 { 
                     Precio: 50000
                 },
@@ -76,7 +76,7 @@ const Producto = {
 
         {
             nombre: "Camiseta Argentina Suplente",
-            Detalles: [
+            detalles: [
                 { 
                     Precio: 45000
                 },
@@ -97,14 +97,14 @@ const Producto = {
 export default Producto
 
 // Identificamos el contenedor
-//const app = document.getElementById("app");
+const app = document.getElementById("app");
 
 //console.log(app)
 
  
-/*
-let RenderHTML = `<h2>${carrera.nombre}</h2>`
 
+let RenderHTML = `<h2>${Producto.categoria}</h2>`
+/*
 carrera.semestres.forEach(
     (semestre)=>{
         RenderHTML += `<h3>${semestre.nombre}</h3>`
