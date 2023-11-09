@@ -7,7 +7,8 @@ const Producto = {
             Precio: 65000,
             Talle: "XL",
             Genero: "Masculino",
-            Imagen: "./media/CamisetaArgentina.jpg"
+            Imagen: "./media/CamisetaArgentina.jpg",
+            Boton: "./Contacto.html"
         },
 
         {
@@ -15,7 +16,8 @@ const Producto = {
             Precio: 30000,
             Talle: "L",
             Genero: "Masculino",
-            Imagen: "./media/ConjuntoDeportivoHombre.jpg"
+            Imagen: "./media/ConjuntoDeportivoHombre.jpg",
+            Boton: "./Contacto.html"
         },
 
         {     
@@ -23,7 +25,8 @@ const Producto = {
             Precio: 25000,
             Talle: "XL",
             Genero: "Femenino",
-            Imagen: "./media/ConjuntoDeportivoMujer.jpg"  
+            Imagen: "./media/ConjuntoDeportivoMujer.jpg",
+            Boton: "./Contacto.html"
         },
 
         {    
@@ -31,7 +34,8 @@ const Producto = {
             Precio: 50000,
             Talle: 40,
             Genero: "Masculino",
-             Imagen: "./media/ZapatillasDeportiva.jpg"
+            Imagen: "./media/ZapatillasDeportiva.jpg",
+            Boton: "./Contacto.html"
         },
 
         {
@@ -39,7 +43,8 @@ const Producto = {
             Precio: 45000,
             Talle: "XL",
             Genero: "Masculino",
-            Imagen: "./media/CamisetaSuplente.jpg"
+            Imagen: "./media/CamisetaSuplente.jpg",
+            Boton: "./Contacto.html"
         }
     ]
 };
@@ -51,44 +56,94 @@ const app = document.getElementById("app");
 
 //console.log(app)
 
- 
-
-let RenderHTML = `<h2>${Producto.categoria}</h2>`
-
-// Producto.articulos.forEach(
-//     (detalles)=>{
-//         let Productos = "";
-//         Producto.Productos.forEach(
-//             (detalles)=>{
-//                 if (detalles.precio < 100000){
-//                       Productos += `<p>${detalles.Precio}</p>`
-//                   Productos += `<img ${detalles.Imagen}>`
-//                     Productos += `<h2>${articulo.nombre}</h2>`
-//                     Productos += `<p>${detalles.Talle}</p>`
-//                 }else{
-//                     materias += `<li>${materia.nombre} (Promocionable)</li> `
-//                 }
-//         })       
-//     }
-// )
 
 
-// app.innerHTML = RenderHTML
+let Productos = "";
+
+Producto.articulo.forEach(
+    (articulo)=>{
+       Productos += `<div class="Compras_container_item">
+            <div class="Compras_item">
+                <figure>
+                    <img src="${articulo.Imagen}" alt="${articulo.nombre}">
+                </figure>
+                <div class="Compras_info-producto">
+                    <h2>${articulo.nombre}</h2>
+                    <p class="Compras_precio">${articulo.Precio}</p>
+                    <p class="Compras_precio">${articulo.Talle}</p>
+                    <a href="${articulo.Boton}">Comprar</a> 
+                </div>
+                
+            </div>
+
+        </div>`;   
+              
+});
+
+let RenderHTML = `<h2>${Producto.categoria}</h2>${Productos}`; 
+
+app.innerHTML = RenderHTML;
 
 
 
 
 
-// Creamos variable que contendrá el HTML renderizado
-// let renderizado = `<h2>${carrera.nombre}</h2>`;
 
-// carrera.semestres.forEach(semestre=>{
-//     let materias = ""
-//     semestre.materias.forEach(materia=>{
-//         materias += materia.nombre
-//     })
-//     renderizado += semestre.nombre + " " + materias
-// })
 
-// Probamos si funciona
-// app.innerHTML = renderizado;
+
+
+
+
+/*
+    <!-- ConjuntoDeportivoHombre -->
+            <div class="Compras_item">
+                <figure>
+                    <img src="media/ConjuntoDeportivoHombre.jpg" alt="">
+                </figure>
+                <div class="Compras_info-producto">
+                    <h2>Conjunto Deportivo</h2>
+                    <p class="Compras_precio">30.000</p>
+                    <p class="Compras_precio">L</p>
+                    <a href="Contacto.html">Comprar</a>
+                </div>
+            </div>
+            
+            <!-- ConjuntoDeportivoMujer -->
+            <div class="Compras_item">
+                <figure>
+                    <img src="media/ConjuntoDeportivoMujer.jpg" alt="">
+                </figure>
+                <div class="Compras_info-producto">
+                    <h2>Conjunto Deportivo</h2>
+                    <p class="Compras_precio">25.000</p>
+                    <p class="Compras_precio">XL</p>
+                    <a href="Contacto.html">Comprar</a>
+                </div>
+            </div>
+            
+            <!-- Zapatilla -->
+            <div class="Compras_item">
+                <figure>
+                    <img src="media/ZapatillasDeportiva.jpg" alt="">
+                </figure>
+                <div class="Compras_info-producto">
+                    <h2>Zapatilla Nike</h2>
+                    <p class="Compras_precio">50.000</p>
+                    <p class="Compras_precio">T 40</p>
+                    <a href="Contacto.html">Comprar</a>
+                </div>
+            </div>
+            
+            <!-- CamisetaArgentinaSuplente -->
+            <div class="Compras_item">
+                <figure>
+                    <img src="media/CamisetaSuplente.jpg" alt="">
+                </figure>
+                <div class="Compras_info-producto">
+                    <h2>Camiseta ARG Suplente</h2>
+                    <p class="Compras_precio">45.000</p>
+                    <p class="Compras_precio">XL</p>
+                    <a href="Contacto.html">Comprar</a>
+                </div>
+            </div>
+*/
