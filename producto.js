@@ -51,38 +51,7 @@ const Producto = {
 
 export default Producto
 
-// Identificamos el contenedor
-const app = document.getElementById("app");
 
-//console.log(app)
-
-
-
-let Productos = "";
-
-Producto.articulo.forEach(
-    (articulo)=>{
-       Productos += `<div class="Compras_container_item">
-            <div class="Compras_item">
-                <figure>
-                    <img src="${articulo.Imagen}" alt="${articulo.nombre}">
-                </figure>
-                <div class="Compras_info-producto">
-                    <h2>${articulo.nombre}</h2>
-                    <p class="Compras_precio">${articulo.Precio}</p>
-                    <p class="Compras_precio">${articulo.Talle}</p>
-                    <a href="${articulo.Boton}">Comprar</a> 
-                </div>
-                
-            </div>
-
-        </div>`;   
-              
-});
-
-let RenderHTML = `<h2>${Producto.categoria}</h2>${Productos}`; 
-
-app.innerHTML = RenderHTML;
 
 
 
